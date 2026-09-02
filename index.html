@@ -7,32 +7,34 @@
 <meta name="description" content="hey Samuel, I saved you a spot.">
 <meta property="og:title" content="hey Samuel, I saved you a spot.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#EFF2EE" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111917" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='%23F28B5A'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#DAE8EE" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B2B24" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='22' fill='%233AA36A'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..500,0..100,0..1;1,9..144,300..500,0..100,0..1&display=swap">
 <style>
   /* One sentence, set well. The full stop is the spot. */
   :root {
-    --ground: #EFF2EE;
-    --ink: #172420;
-    --spot: #F28B5A;
+    --ground: #DAE8EE;
+    --ink: #0F3B32;
+    --spot: #3AA36A;
     --glow: transparent;
     --display: 'Fraunces', Georgia, 'Times New Roman', serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --ground: #111917;
-      --ink: #EEF2EE;
-      --glow: rgba(242, 139, 90, .5);
+      --ground: #0B2B24;
+      --ink: #DCE8EC;
+      --spot: #4CC181;
+      --glow: rgba(76, 193, 129, .55);
     }
   }
   :root[data-theme="dark"] {
-    --ground: #111917;
-    --ink: #EEF2EE;
-    --glow: rgba(242, 139, 90, .5);
+    --ground: #0B2B24;
+    --ink: #DCE8EC;
+    --spot: #4CC181;
+    --glow: rgba(76, 193, 129, .55);
   }
 
   * { box-sizing: border-box; }
@@ -57,7 +59,7 @@
     margin: 0;
     max-width: 12em;
     font-weight: 340;
-    font-size: clamp(2.4rem, 12vw, 6.5rem);
+    font-size: clamp(2.4rem, 13vw, 6.5rem);
     line-height: 1.06;
     letter-spacing: -.015em;
     font-optical-sizing: auto;
@@ -79,6 +81,7 @@
     vertical-align: baseline;
     transform-origin: center;
   }
+  .nb { white-space: nowrap; }
   .sr {
     position: absolute;
     width: 1px; height: 1px;
@@ -103,7 +106,7 @@
 </head>
 <body>
 <main class="stage">
-  <p class="line"><em>hey Samuel,</em><br>I saved you a spot<span class="spot" aria-hidden="true"></span><span class="sr">.</span></p>
+  <p class="line"><em>hey Samuel,</em><br>I saved you <span class="nb">a spot<span class="spot" aria-hidden="true"></span><span class="sr">.</span></span></p>
 </main>
 </body>
 </html>
