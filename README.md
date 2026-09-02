@@ -9,10 +9,10 @@ A single page that says one thing: *hey Samuel, I saved you a spot.*
 Edit the one paragraph in `index.html`:
 
 ```html
-<p class="line"><em>hey Samuel,</em><br>I saved you <span class="nb">a spot<span class="spot" aria-hidden="true"></span><span class="sr">.</span></span></p>
+<p class="line"><em>hey <span class="name">Samuel</span>,</em><br>I saved you <span class="nb">a spot<span class="spot" aria-hidden="true"></span><span class="sr">.</span></span></p>
 ```
 
-The green dot after "spot" is the full stop. Leave the trailing spans in place if you change the sentence.
+The green dot after "spot" is the full stop, and the name shares its colour. Leave the trailing spans in place if you change the sentence.
 
 ## Deploy
 
