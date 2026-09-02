@@ -6,9 +6,8 @@ Built to be kept. `index.html` is the entire site. The typeface (Libre Caslon Te
 
 ## The design
 
-- A painted green door, seen up close. Gloss paint lit from above, a tall recessed upper panel with the words lettered on it, a lock rail with a brass plate and knob, and a shorter panel below. The panels are the same paint; only their shadows say they're recessed.
+- One deep green, the colour of a painted Dublin door. Warm-white words.
 - Samuel's name and the full stop are the boy's blue. The spot is him.
-- The brass plate is engraved with the address, samuelrobertobrien.com, and the day the spot was saved.
 - On a phone the sentence breaks as *hey Samuel, / I saved you / a spot.* On a wider screen it sits on two lines.
 - The only movement is the spot landing when the page opens. It stays still for anyone with reduced motion turned on.
 
@@ -20,7 +19,7 @@ Edit the one paragraph in `index.html`:
 <p class="line"><em>hey <span class="name">Samuel</span>,</em><br>I saved you <span class="nb">a spot<span class="spot" aria-hidden="true"></span><span class="sr">.</span></span></p>
 ```
 
-The blue dot after "spot" is the full stop, and the name shares its colour. Leave the trailing spans in place if you change the sentence. The two lines on the brass plate are the `<a class="plate">` just below it.
+The blue dot after "spot" is the full stop, and the name shares its colour. Leave the trailing spans in place if you change the sentence.
 
 ## Link previews
 
