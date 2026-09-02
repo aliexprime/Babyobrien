@@ -1,36 +1,18 @@
-# Samuel's landing page
+# Samuel's Spot
 
-A single static page announcing Samuel O'Brien's arrival. No build step, no dependencies: `index.html` is the whole site.
+A single page that says one thing: *hey Samuel, I saved you a spot.*
 
-## Fill in the real details
+`index.html` is the whole site. No build step, no dependencies. It loads one typeface (Fraunces) from Google Fonts and falls back to Georgia if that's unavailable.
 
-Everything below is an **example value** and needs replacing. Each spot is marked with an `<!-- EDIT -->` comment in `index.html`.
+## Change the words
 
-| What | Where in `index.html` | Currently |
-| --- | --- | --- |
-| Arrival sentence and `datetime` (drives the "days old" line) | `.lede` | Friday 28 August 2026, 03:42 |
-| Wristband strip | `.band` | O'Brien, Samuel · DOB 28/08/2026 · 03:42 · 3.41 kg · 51 cm · M |
-| Details card (born, time, weight, length) | `.card` | as above |
-| Note from the parents | `.note` | placeholder text |
-| Sign-off | `.sign` | Mum & Dad |
-| Message button email | `.btn-primary` `href` | hello@example.com |
-| Gift registry link | second `.btn` `href` | `#` |
-| Footer date | `footer` | Est. 28 Aug 2026 |
-| Share preview text (WhatsApp, iMessage) | `<meta property="og:...">` in `<head>` | mirrors the details above |
+Edit the one paragraph in `index.html`:
 
-## Add the photo
-
-Save a portrait photo as `samuel.jpg` in this folder (4:5 crops best). Until the file exists the page shows a soft placeholder frame instead of a broken image. The same file is used as the share preview image.
-
-## Preview locally
-
-Open `index.html` in a browser, or serve the folder:
-
-```sh
-python3 -m http.server 8000
+```html
+<p class="line"><em>hey Samuel,</em><br>I saved you a spot<span class="spot" aria-hidden="true"></span><span class="sr">.</span></p>
 ```
 
-then visit http://localhost:8000.
+The coral dot after "spot" is the full stop. Leave the two trailing spans in place if you change the sentence.
 
 ## Deploy
 
