@@ -25,9 +25,23 @@ The blue dot after "spot" is the full stop, and the name shares its colour. Leav
 
 `og.png` is the card WhatsApp and iMessage show when the link is shared. The `og:image` tag in `<head>` already points at `https://samuelrobertobrien.com/og.png`, so it works as soon as the site is live at that address. If the words change, take a new 1200×630 screenshot of the page and save it over `og.png`.
 
-## Deploy
+## Deploy on GitHub Pages
 
-Point samuelrobertobrien.com at whichever host you choose.
+The repo already holds the two files Pages needs: `CNAME` (the custom domain) and `.nojekyll` (serve the files exactly as they are).
 
-- **Vercel:** import the repository, framework preset "Other", no build command, output directory `.`.
-- **GitHub Pages:** Settings → Pages → deploy from branch, folder `/ (root)`.
+1. On GitHub, open **Settings → Pages**.
+2. Under **Build and deployment**, set Source to **Deploy from a branch**, pick the branch that holds `index.html`, folder `/ (root)`, and save.
+3. The **Custom domain** box should already show `samuelrobertobrien.com` from the `CNAME` file. If not, type it in and save.
+4. At the domain registrar, add these DNS records for the bare domain (check them against GitHub's current Pages documentation before entering):
+
+   | Type | Host | Value |
+   | --- | --- | --- |
+   | A | @ | 185.199.108.153 |
+   | A | @ | 185.199.109.153 |
+   | A | @ | 185.199.110.153 |
+   | A | @ | 185.199.111.153 |
+   | CNAME | www | aliexprime.github.io |
+
+5. Once DNS has propagated (minutes to a day), tick **Enforce HTTPS** on the Pages settings page.
+
+The repository must be public for Pages on a free GitHub plan.
